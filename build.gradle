@@ -185,7 +185,7 @@ dependencies {
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    runtimeOnly("maven.modrinth:journeymap:${journeymap_version}-forge")
+    runtimeOnly fg.deobf("maven.modrinth:journeymap:${journeymap_version}-forge")
     compileOnly("info.journeymap:journeymap-api:${journeymap_api_version}-SNAPSHOT") // for some reason this is needed explicitly
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
